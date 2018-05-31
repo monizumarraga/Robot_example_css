@@ -1,0 +1,168 @@
+body{
+	background-image:url(papel-pintado-infantil-rayas-beige-coleccion-my-little-world_922809.jpg);
+    background-attachment: fixed;
+}
+
+@keyframes h1_animation {
+    from {background: radial-gradient(white 10%, #f1e6d0 80%);}
+    to {background: radial-gradient(#f1e6d0 10%, white 80%);}
+}
+
+
+@keyframes right_arm_animation {
+	0%{-webkit-transform: rotate(-20deg);}
+	0%{-moz-transform: rotate(-20deg);}
+	0%{-o-transform: rotate(-20deg);}
+	0%{-ms-transform: rotate(-20deg);}
+    0%{transform: rotate(-20deg);}
+	20%{-webkit-transform: rotate(-40deg);}
+	20%{-moz-transform: rotate(-40deg);}
+	20%{-o-transform: rotate(-40deg);}
+	20%{-ms-transform: rotate(-40deg);}
+    20%{transform: rotate(-40deg);}
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Butterfly Kids', sans-serif;
+	font-size:75px;
+	color: #e8bba9;
+	overflow: hidden;
+    word-wrap: break-word;
+	text-shadow: 2px 2px 5px #ecb39c;
+	padding: 25px 50px;
+    background: radial-gradient(white 10%, #f1e6d0 100%);
+	border: 10px dotted #e8bba9;
+    border-radius: 45px;
+	box-shadow: 5px 5px #ecb39c; 
+	animation-name: h1_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.robots {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.head, 
+.left_arm, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #ecb39c;
+}
+
+.torso{
+    background-image: url(2020-ROSSO-tela-ramillete-flores.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+.eyes {
+	display:flex;
+	align-self:flex_start;
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+} 
+
+.right_arm { 
+	margin-left: 10px; 
+	animation-name: right_arm_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+	animation-timing-function:ease;
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+	z-index: 1;
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	display:flex;
+	align-self:flex_end;
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+	z-index: 0;
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
+
+
+
+
